@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Umbrella</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Umbrella Section -->
+      <div class="umbrella-box">
+        <div class="umbrella">
+          <img
+            src="./assets/umbrella.png"
+            alt="Umbrella"
+            class="umbrella-img"
+          />
+          <div class="color-overlay"></div>
+          <div class="logo-overlay">
+            <img id="logo-preview" src="" alt="Logo" class="logo-img" style="display: none;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Color Picker Section -->
+      <div class="content-box">
+        <h1>Customize Umbrella</h1>
+        <div class="colors"></div>
+
+        <!-- Upload Section -->
+        <div class="upload-container">
+          <div class="text-container">
+            <h3>Customize your umbrella</h3>
+            <p>Upload a logo for an instant preview</p>
+            <span>.png and .jpg files only. Max size is 5MB</span>
+          </div>
+
+          <div class="button-container">
+            <label for="upload" class="upload-button">
+              <img src="./assets/upload_icon.svg" class="upload-icon"/>
+              <span>UPLOAD LOGO</span>
+            </label>
+            <input type="file" id="upload" accept="image/png,image/jpeg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
